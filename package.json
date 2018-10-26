@@ -1,0 +1,9 @@
+{
+  "name": "astroverse",
+  "description": "Store based on structures",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0"
+  },
+  "license": "MIT"
+}
