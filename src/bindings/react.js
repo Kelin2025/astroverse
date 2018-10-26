@@ -16,7 +16,7 @@ export const useStore = function(store, memo) {
   return [state, store]
 }
 
-export const useData = function useData(creator, initialState) {
+export const useNewStore = function useData(creator, initialState) {
   const store = React.useMemo(() => creator(initialState), [initialState])
 
   return useStore(store, initialState)
