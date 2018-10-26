@@ -2,8 +2,22 @@
   "name": "astroverse",
   "description": "Store based on structures",
   "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build:index": "babel ./src/index.js --out-file ./index.js",
+    "build:react": "babel ./src/bindings/react.js --out-file ./react.js",
+    "build": "npm run build:index && npm run build:react"
+  },
   "peerDependencies": {
     "react": "^16.7.0-alpha.0"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
 }
