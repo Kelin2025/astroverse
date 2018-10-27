@@ -40,7 +40,7 @@ sunSystem.star.update("Foobar")
 
 ```js
 import React from "React"
-import { useData } from "astroverse/react"
+import { useNewStore } from "astroverse/react"
 
 import { planet, system } from "./structs"
 
@@ -50,7 +50,7 @@ const initialData = {
 }
 
 const View = () => {
-  const [state, { planets }] = useData(system, initialData)
+  const [state, { planets }] = useNewStore(system, initialData)
 
   return (
     <div>
@@ -67,7 +67,7 @@ const View = () => {
 }
 
 const AddPlanetForm = ({ value, onSubmit }) => {
-  const [state, { update }] = useData(planet, value)
+  const [state, { update }] = useNewStore(planet, value)
 
   const handleSubmit = evt => {
     evt.preventDefault()
