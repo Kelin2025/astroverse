@@ -1,4 +1,4 @@
-const generateWatch = getState => {
+export const generateWatch = getState => {
   const watchers = []
 
   const addWatcher = cb => {
