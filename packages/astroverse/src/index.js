@@ -1,4 +1,5 @@
-import { generateStruct } from "./utils/generate"
+import { generateWatch } from "./utils/watch"
+import { generateStruct, getStructState } from "./utils/generate"
 
 export const unit = name => (initialState = null) => {
   let state = initialState
