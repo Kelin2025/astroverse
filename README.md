@@ -4,6 +4,9 @@ Store based on structures
 
 > **IN DEVELOPMENT**
 
+## Working demo
+[![Edit zxvq8r2k0m](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/zxvq8r2k0m)
+
 ## Installation
 
 ```
