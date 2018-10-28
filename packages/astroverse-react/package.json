@@ -1,0 +1,12 @@
+{
+  "name": "astroverse-react",
+  "version": "0.3.0",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir=dist"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0"
+  }
+}
